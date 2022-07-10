@@ -362,16 +362,18 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        <div class="footer-subscription">
           <p class="footer-title">Подпишитесь на рассылку</p>
-          <input class="footer-input" type="email" name="mail" placeholder="E-mail" >
-          <button type="submit" class="footer-btn">
+          <form class="footer-form">
+            <input class="footer-input" type="email" name="mail" placeholder="E-mail" required>
+            <button type="submit" class="footer-btn">
               Подписаться
-               <swg class="send-icon">
+              <svg class="send-icon">
                 <use href="./img/icons.svg#icon-send"></use>
-              </swg>
-          </button>
-        </form>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -383,18 +385,18 @@
       </button>
        <form class="request-form"> 
         <p class="request-title">Оставьте свои данные, мы вам перезвоним</p>
+        
         <label class="request-field">
           <span class="request-descr">Имя</span> 
-          <input class="request-input" type="text" name="name">
+          <input class="request-input" type="text" name="name" required>
           <svg class="request-icon" width="18" height="18">
             <use href="./img/icons.svg#icon-person"></use>
           </svg>
         </label>
-
         
         <label class="request-field">
           <span class="request-descr">Телефон</span> 
-          <input class="request-input" type="tel" name="tel">
+          <input class="request-input" type="tel" name="tel" required>
           <svg class="request-icon" width="18" height="18">
             <use href="./img/icons.svg#icon-phone"></use>
           </svg>
@@ -402,7 +404,7 @@
 
         <label class="request-field">
           <span class="request-descr">Почта</span> 
-          <input class="request-input" type="email" name="mail">
+          <input class="request-input" type="email" name="mail" required>
           <svg class="request-icon" width="18" height="18">
             <use href="./img/icons.svg#icon-email"></use>
           </svg>
@@ -411,12 +413,10 @@
         <label class="request-field">
           <span class="request-descr">Комментарии</span> 
           <textarea class="request-comment" name="comment" rows="10" placeholder="Введите текст"></textarea>
-
         </label>
 
-        
         <label class="request-check">
-          <input class="checkbox visually-hidden" type="checkbox" name="check" value="check" checked >
+          <input class="checkbox visually-hidden" type="checkbox" name="check" value="check"  required>
           <span class="custom-check">
             <svg class="check-icon" width="16" height="15">
               <use href="./img/icons.svg#icon-check"></use>

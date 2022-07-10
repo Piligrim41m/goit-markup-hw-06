@@ -469,8 +469,8 @@ img {
 
 /* footer form */
 
-.footer-form {
-  margin-left: 93px;
+.footer-subscription {
+  margin-left: auto;
 }
 
 .footer-input {
@@ -482,6 +482,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: var(--white-color);
 }
 
 .footer-input::placeholder {
@@ -737,16 +738,21 @@ img {
   border: 1px solid var(--input-dorder-color);
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .request-input:hover, 
-.request-input:focus {
+.request-input:focus-within,
+.request-comment:hover, 
+.request-comment:focus-within {
   border-color: var(--accent-color);
+  outline: none;
 }
 
-.request-input:hover+ .request-icon {
+.request-input:hover+ .request-icon,
+.request-input:focus-within+ .request-icon {
   fill: var(--accent-color);
 }
 .request-comment {
@@ -756,6 +762,11 @@ img {
   border: 1px solid var(--input-dorder-color);
   border-radius: 4px;
   resize: none;
+  margin-top: 4px;
+  cursor: pointer;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .request-comment::placeholder{
   letter-spacing: 0.01em;
@@ -778,7 +789,7 @@ img {
   align-items: center;
   font-size: 14px;
   line-height: 1.71em;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .custom-check {
@@ -818,6 +829,7 @@ img {
   border-radius: 4px;
   border: none;
   margin-top: 30px;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
